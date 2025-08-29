@@ -1,0 +1,48 @@
+Initialized native services in: C:\Users\Dell\.gradle\native
+Initialized jansi services in: C:\Users\Dell\.gradle\native
+The client will now receive all logging from the daemon (pid: 18344). The daemon log file: C:\Users\Dell\.gradle\daemon\8.14.3\daemon-18344.out.log
+Starting 3rd build in daemon [uptime: 5 mins 58.879 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 20% of 384 MiB]
+Using 4 worker leases.
+Now considering [C:\Users\Dell\Desktop\All Spring Projects\another projects\Project-MilitaryVerse] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'C:\Users\Dell\Desktop\All Spring Projects\another projects\Project-MilitaryVerse\settings.gradle'.
+Projects loaded. Root project using build file 'C:\Users\Dell\Desktop\All Spring Projects\another projects\Project-MilitaryVerse\build.gradle'.
+Included projects: [root project 'Project-MilitaryVerse']
+
+> Configure project :
+Evaluating root project 'Project-MilitaryVerse' using build file 'C:\Users\Dell\Desktop\All Spring Projects\another projects\Project-MilitaryVerse\build.gradle'.
+Resolved plugin [id: 'java']
+Resolved plugin [id: 'org.springframework.boot', version: '3.5.5']
+Resolved plugin [id: 'io.spring.dependency-management', version: '1.1.7']
+Applying dependency management to configuration 'annotationProcessor' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'apiElements' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'archives' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'bootArchives' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'compileClasspath' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'compileOnly' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'default' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'developmentOnly' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'implementation' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'mainSourceElements' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'runtimeClasspath' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'runtimeElements' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'runtimeOnly' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'testCompileClasspath' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'testCompileOnly' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'testImplementation' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'Project-MilitaryVerse'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'Project-MilitaryVerse'
+All projects evaluated.
+Task name matched 'clean'
+Task name matched 'bootRun'
+Task name matched 'clean'
+Task name matched 'bootRun'
+
+[Incubating] Problems report is available at: file:///C:/Users/Dell/Desktop/All%20Spring%20Projects/another%20projects/Project-MilitaryVerse/build/reports/problems/problems-report.html
+Watched directory hierarchies: [C:\Users\Dell\Desktop\All Spring Projects\another projects\Project-MilitaryVerse]

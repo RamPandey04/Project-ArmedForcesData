@@ -1,0 +1,107 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: yourname
+      changes:
+        - createTable:
+            tableName: regiment
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: varchar(255)
+              - column:
+                  name: motto
+                  type: varchar(255)
+              - column:
+                  name: established_year
+                  type: integer
+              - column:
+                  name: history
+                  type: text
+        - createTable:
+            tableName: operation
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: varchar(255)
+              - column:
+                  name: year
+                  type: integer
+              - column:
+                  name: location
+                  type: varchar(255)
+              - column:
+                  name: description
+                  type: text
+              - column:
+                  name: regiment_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_operation_regiment
+                    references: regiment(id)
+        - createTable:
+            tableName: martyr
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: varchar(255)
+              - column:
+                  name: rank
+                  type: varchar(255)
+              - column:
+                  name: date_of_sacrifice
+                  type: date
+              - column:
+                  name: regiment_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_martyr_regiment
+                    references: regiment(id)
+              - column:
+                  name: operation_id
+                  type: bigint
+                  constraints:
+                    nullable: true
+                    foreignKeyName: fk_martyr_operation
+                    references: operation(id)
+        - createTable:
+            tableName: equipment
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: varchar(255)
+              - column:
+                  name: type
+                  type: varchar(255)
+              - column:
+                  name: description
+                  type: text
+              - column:
+                  name: in_service_since
+                  type: integer
