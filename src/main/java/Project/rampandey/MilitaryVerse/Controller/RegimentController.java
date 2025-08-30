@@ -17,7 +17,7 @@ public class RegimentController {
     }
 
     @PostMapping
-    public ResponseEntity<RegimentDTO> create(RegimentDTO regimentDTO){
+    public ResponseEntity<RegimentDTO> create(@RequestBody RegimentDTO regimentDTO){
         return ResponseEntity.ok(regimentService.create(regimentDTO)) ;
     }
 
