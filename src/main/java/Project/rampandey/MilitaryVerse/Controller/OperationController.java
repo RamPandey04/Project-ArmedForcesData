@@ -11,24 +11,27 @@ import java.util.List;
 @RequestMapping("/operations")
 public class OperationController {
 
-    OperationService operationService;
+    private final OperationService operationService;
 
     public OperationController(OperationService operationService) {
-        this.operationService = operationService ;
+        this.operationService = operationService;
     }
 
-    @GetMapping("/regiment{id}")
-    public ResponseEntity<List<OperationDTO>> findByRegimentId(@RequestParam Long id){
-        return ResponseEntity.ok( operationService.findByRegimentId(id));
+    //  Create Operation
+    @PostMapping
+    public ResponseEntity<OperationDTO> create(@RequestBody OperationDTO operationDTO) {
+        return ResponseEntity.ok(operationService.create(operationDTO));
     }
 
+    //  Get all Operations
     @GetMapping
-    public ResponseEntity<List<OperationDTO>>  getAll(){
+    public ResponseEntity<List<OperationDTO>> getAll() {
         return ResponseEntity.ok(operationService.findAll());
     }
 
-    @PostMapping
-    public ResponseEntity<OperationDTO> create(OperationDTO operationDTO){
-        return ResponseEntity.ok(operationService.create(operationDTO));
+    // Get Operations by Regiment ID
+    @GetMapping("/regiment/{id}")
+    public ResponseEntity<List<OperationDTO>> getByRegimentId(@PathVariable("id") Long regimentId) {
+        return ResponseEntity.ok(operationService.findByRegimentId(regimentId));
     }
 }
