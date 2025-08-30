@@ -10,13 +10,11 @@ import Project.rampandey.MilitaryVerse.Repository.RegimentRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
 public class MartyrService {
-
 
     ModelMapper modelMapper;
     MartyrRepository martyrRepository;

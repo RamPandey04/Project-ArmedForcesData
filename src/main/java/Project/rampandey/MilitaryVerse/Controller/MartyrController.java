@@ -24,7 +24,7 @@ public class MartyrController {
     }
 
     @PostMapping
-    public ResponseEntity<MartyrDTO> create( MartyrDTO martyrDTO){
+    public ResponseEntity<MartyrDTO> create( @RequestBody MartyrDTO martyrDTO){
        return ResponseEntity.ok(martyrService.create(martyrDTO));
     }
 
